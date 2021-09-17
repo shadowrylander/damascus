@@ -1017,7 +1017,7 @@ The ~sorrow~ config below is adapted from
 ** alamode
 
 #+begin_src emacs-lisp
-(meq/upnsd alamode)
+(meq/upnsd alamode :upnsd-postconfig (lode) (meta))
 #+end_src
 
 ** cosmog

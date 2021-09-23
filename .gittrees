@@ -1,0 +1,4 @@
+[subtree "settings"]
+	url = https://github.com/shadowrylander/settings.git
+	path = settings
+	branch = main

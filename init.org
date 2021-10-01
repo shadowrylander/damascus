@@ -1167,6 +1167,7 @@ Cool [[https://github.com/iqbalansari/restart-emacs][package]] by
 ** vterm
 
 #+begin_src emacs-lisp
+(setq vterm-always-compile-module t)
 (meq/up vterm :use-package-postconfig (multi-vterm)
     :if (not (member system-type '(windows-nt ms-dos)))
     :demon ((alloy-chord "vv") 'meq/shell)
@@ -1175,7 +1176,6 @@ Cool [[https://github.com/iqbalansari/restart-emacs][package]] by
         (vterm-timer-delay 0.01)
 
         (vterm-shell (meq/ued* "vterm-start.sh"))
-        (vterm-always-compile-module t)
         (vterm-kill-buffer-on-exit t))
 #+end_src
 
